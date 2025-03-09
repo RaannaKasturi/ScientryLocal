@@ -72,16 +72,30 @@ def download_file(download_as_pdf):
 
 with gr.Blocks(title="Scientry Local App") as app:
     gr.HTML("""
-<div styles={"display":"flex","paddingTop":"2.5rem","flexDirection":"column","justifyContent":"center","alignItems":"center","width":"100%"}>
-    <div styles={"display":"flex","marginLeft":"0.5rem","flexDirection":"row","justifyContent":"center","alignItems":"center"}>
-        <img src="https://github.com/RaannaKasturi/ScientryLocal/blob/main/icon.png" alt="ScientryIcon" width="32" height="32">
-        <h1 styles={"fontSize":"1.875rem","lineHeight":"2.25rem","fontWeight":700}>Scientry (Local)</h1>
+    <div
+        style="display: flex; padding-top: 2.5rem; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+        <div
+            style="display: flex; margin-left: 0.5rem; flex-direction: row; justify-content: center; align-items: center;">
+            <img src="https://raw.githubusercontent.com/RaannaKasturi/ScientryLocal/refs/heads/main/icon.png"
+                style="margin-right: 0.5rem" alt="ScientryIcon" width="32" height="32">
+            <h1 style="font-size: 1.875rem; line-height: 2.25rem; font-weight: 700;">Scientry (Local)</h1>
+        </div>
+        <p style="font-style: italic;">Science Simplifed, Knowledge Amplified</p>
+        <br>
+        <p>
+            Designed and Developed by
+            <a style="text-decoration: underline; text-underline-offset: 2px;" href="http://nayankasturi.eu.org"
+                target="_blank" rel="noopener noreferrer">
+                Nayan Kasturi
+            </a>
+            and
+            <a style="text-decoration: underline; text-underline-offset: 2px;" href="http://binarybiology.top"
+                target="_blank" rel="noopener noreferrer">
+                Binary Biology
+            </a>
+        </p>
     </div>
-    <p styles={"fontStyle":"italic"}>Science Simplifed, Knowledge Amplified</p>
-    <br>
-    <p>Designed and Developed by <a styles={"textDecoration":"underline","textUnderlineOffset":"2px"} href="http://nayankasturi.eu.org" target="_blank" rel="noopener noreferrer">Nayan Kasturi</a> and <a styles={"textDecoration":"underline","textUnderlineOffset":"2px"} href="http://binarybiology.top" target="_blank" rel="noopener noreferrer">Binary Biology</a></p>
-</div>
-""")
+    """)
     with gr.Column():
         with gr.Row():
             with gr.Column():
