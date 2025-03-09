@@ -72,6 +72,19 @@ def download_file(download_as_pdf):
 
 
 with gr.Blocks(title="Scientry Local App") as app:
+    gr.HTML("""
+<div class="flex flex-col justify-center items-center w-full pt-10">
+        <div class="flex justify-center items-center space-x-2">
+            <img src="https://github.com/RaannaKasturi/ScientryLocal/blob/main/icon.png" alt="ScientryIcon" width="32" height="32">
+            <h1 class="text-3xl font-bold">Scientry (Local)</h1>
+        </div>
+        <p class="italic">Science Simplifed, Knowledge Amplified</p>
+        <br>
+        <p>Designed and Developed by <a class="underline underline-offset-2" href="http://nayankasturi.eu.org"
+                target="_blank" rel="noopener noreferrer">Nayan Kasturi</a> and <a class="underline underline-offset-2"
+                href="http://binarybiology.top" target="_blank" rel="noopener noreferrer">Binary Biology</a></p>
+    </div>
+""")
     with gr.Column():
         with gr.Row():
             with gr.Column():
